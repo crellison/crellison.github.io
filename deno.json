@@ -1,0 +1,10 @@
+{
+  "imports": {
+    "$sharp": "npm:sharp@~0.33.0",
+    "$path": "jsr:@std/path",
+    "$image-size": "npm:image-size@^1.1.1"
+  },
+  "tasks": {
+    "gen-images": "deno run --allow-read --allow-env --allow-ffi --allow-write scripts/generateImageVariants.ts"
+  }
+}

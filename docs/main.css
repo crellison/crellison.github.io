@@ -1,8 +1,18 @@
 :root {
   --dark: #2e2e2e;
   --light: #fafaff;
-  --pink: #e2b4bd;
-  --blue: #93a8ac;
+  --pink: #ffa6bc;
+  --blue: #7badb6;
+  --yellow: #fbcc00;
+}
+
+@media (color-gamut: p3) {
+  :root {
+    --yellow: oklch(86% 0.1949 94.24);
+    --dark: oklch(30.12% 0 0);
+    --pink: oklch(82.65% 0.1159 5.24);
+  }
+}
 }
 
 .root {
@@ -16,6 +26,7 @@
 }
 
 .background {
+  filter: brightness(0.5);
   position: absolute;
   top: 0;
   left: 0;
@@ -40,7 +51,7 @@ a {
 }
 
 a:hover {
-  color: var(--dark);
+  color: var(--yellow);
 }
 
 .footer {

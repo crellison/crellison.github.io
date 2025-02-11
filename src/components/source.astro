@@ -1,0 +1,9 @@
+---
+const { src, media, sizes, mimeType = 'image/jpeg' } = Astro.props;
+const [prefix, extension] = src.split('.');
+const srcset = [500, 625, 775, 950, 1200, 1500, 1900, 2400]
+  .map((size) => `${prefix}-${size}w.${extension} ${size}w`)
+  .join(', ');
+---
+
+<source type={mimeType} media={media} sizes={sizes} srcset={srcset} />

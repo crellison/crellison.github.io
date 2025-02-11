@@ -1,9 +1,10 @@
 :root {
   --dark: #2e2e2e;
-  --light: #fafaff;
+  --light: #fafafa;
   --pink: #ffa6bc;
-  --blue: #7badb6;
+  --blue: #2d5d7b;
   --yellow: #fbcc00;
+  --red: #bb342f;
 }
 
 @media (color-gamut: p3) {
@@ -33,10 +34,16 @@
 body {
   font-family: 'Atkinson Hyperlegible', 'Helvetica Neue', Helvetica, sans-serif;
   font-weight: 500;
+  background-color: var(--light);
 }
 
 li {
   list-style-image: url('/hash.svg');
+}
+
+a {
+  transition: color 0.3s ease-in-out;
+  color: var(--blue);
 }
 
 a:hover {

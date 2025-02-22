@@ -2,13 +2,14 @@
   --dark: #2e2e2e;
   --light: #fafafa;
   --pink: #ffa6bc;
-  --blue: #2d5d7b;
+  --blue: #1b29ff;
   --yellow: #fbcc00;
   --red: #bb342f;
 }
 
 @media (color-gamut: p3) {
   :root {
+    --blue: oklch(48% 0.296 266.29);
     --yellow: oklch(86% 0.1949 94.24);
     --dark: oklch(30.12% 0 0);
     --pink: oklch(82.65% 0.1159 5.24);

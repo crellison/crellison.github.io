@@ -3,7 +3,9 @@ import './_index.css';
 import { getCollection } from 'astro:content';
 import Source from '../components/source.astro';
 
-const posts = await getCollection('blog', ({ data }) => !data.isDraft);
+const posts = (await getCollection('blog', ({ data }) => !data.isDraft)).sort(
+  (a, b) => b.data.publishedDate.getTime() - a.data.publishedDate.getTime()
+);
 ---
 
 <html lang="en">
@@ -81,18 +83,20 @@ const posts = await getCollection('blog', ({ data }) => !data.isDraft);
       />
     </picture>
     <div class="info">
-      <p>Hello, my name is Cole Ellison</p>
       <p>
-        I'm a software engineer with a focus on web performance and frontend
-        platform development.
-      </p>
-      <p>
+        Hello, my name is Cole Ellison
+        <br /><br />
+        I'm a software engineer with a focus on web performance and frontend platform
+        development.
+        <br /><br />
         I recently worked at <a href="https://www.grammarly.com">Grammarly</a> as
         a DX Software Engineer. Before that, I spent 6 years at <a
           href="https://squarespace.com">Squarespace</a
         >, rounding out my time there as Tech Lead of Web Performance.
+        <br /><br />
+        From time to time, I write about my work. and other things I'm thinking about
+        or working on.
       </p>
-      <p>From time to time, I write about my work.</p>
       <ul>
         {
           posts.map((post) => (
@@ -102,8 +106,9 @@ const posts = await getCollection('blog', ({ data }) => !data.isDraft);
           ))
         }
       </ul>
-      <p>I'm currently entertaining new opportunities.</p>
       <p>
+        I'm currently entertaining new opportunities.
+        <br /><br />
         Say hi, <a href="https://www.linkedin.com/in/ellisoncole/"
           >if you want</a
         >

@@ -3,7 +3,7 @@ title: A record of learning (2025)
 description: My record of talks, posts, and articles worth engagement
 tags: [engineering, education]
 publishedDate: 2025-02-15
-updatedDate: 2025-03-03
+updatedDate: 2025-03-07
 isDraft: false
 ---
 
@@ -27,11 +27,16 @@ It shifts the focus to value deep knowledge of one's chosen tools and puts a hig
 - [Introducing the React Profiler](https://legacy.reactjs.org/blog/2018/09/10/introducing-the-react-profiler.html#browsing-commits) (Brian Vaughn)
 > yes, it's from 2018, but it's a nice dive into the render and commit phases of React
 
+### Figma Engineering
+
 - [Desperately seeking squircles](https://www.figma.com/blog/desperately-seeking-squircles/) (Daniel Furse)
 
 > Related prior/contemporaneous detail on the design and pursuit of the squircle are found in the following: 
 [iOS 7 Icon Squircle](https://www.cocoanetics.com/2013/06/ios-7-icon-squircle/) and
 [Unleashing Genetic Algorithms on the iOS 7 Icon](https://blog.mikeswanson.com/unleashing-genetic-algorithms-on-the-ios-7-icon/) (Mike Swanson)
+
+- [Under the hood of Figma’s infrastructure: Here’s what goes into powering a web-based design tool](https://www.figma.com/blog/under-the-hood-of-figmas-infrastructure/) (Samir Goel)
+- [How Figma's multiplayer technology works](https://www.figma.com/blog/how-figmas-multiplayer-technology-works/) (Evan Wallace)
 
 ### The difficulty of measuring productivity
 
@@ -70,10 +75,13 @@ Somehow, 15 minutes is enough to provide a full framework for the cycle of foste
 
 ## Tools
 
-No promise that I've gone and used these
+No promise that I've gone and used these, but I've certainly read about them and find them compelling enough to list.
 
 - [Zero Alpha](https://zero.rocicorp.dev/docs/introduction) - sync query engine between client and server
 - [Yjs](https://docs.yjs.dev) auto-syncing, performance-focused CRDT for collaborative applications ([the algo](https://github.com/yjs/yjs#yjs-crdt-algorithm))
 - [Shadow DOM](https://web.dev/articles/shadowdom-v1) - browser-native CSS scoping. Particularly useful in the context of a browser extension or a web app that needs to load a ton of CSS.
 - [Open Stories](https://github.com/dddddddddzzzz/OpenStories) - small syndication format for the social web.
 - [11ty](https://www.11ty.dev) - static site generator
+- [PlayDate SDK](https://play.date/dev/) - game engine for a small console
+- [Clay](https://github.com/nicbarker/clay/blob/main/README.md) - highly performant flexbox-model layout lib for arbitrary rendering libraries.
+More info in the [introduction video](https://www.youtube.com/watch?v=DYWTw19_8r40)

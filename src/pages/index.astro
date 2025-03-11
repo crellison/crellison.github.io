@@ -3,7 +3,12 @@ import './_index.css';
 import { getCollection } from 'astro:content';
 import Source from '../components/source.astro';
 
-const posts = (await getCollection('blog', ({ data }) => !data.isDraft)).sort(
+const posts = (
+  await getCollection(
+    'blog',
+    ({ data }) => !data.isDraft || process.env.NODE_ENV === 'development'
+  )
+).sort(
   (a, b) => b.data.publishedDate.getTime() - a.data.publishedDate.getTime()
 );
 ---
@@ -101,7 +106,10 @@ const posts = (await getCollection('blog', ({ data }) => !data.isDraft)).sort(
         {
           posts.map((post) => (
             <li>
-              <a href={`/posts/${post.id}`}>{post.data.title}</a>
+              <a href={`/posts/${post.id}`}>
+                {post.data.isDraft ? '[DRAFT] ' : ''}
+                {post.data.title}
+              </a>
             </li>
           ))
         }

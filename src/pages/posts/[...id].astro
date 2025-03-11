@@ -2,7 +2,10 @@
 import { getCollection, render } from 'astro:content';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('blog', ({ data }) => !data.isDraft);
+  const posts = await getCollection(
+    'blog',
+    ({ data }) => !data.isDraft || process.env.NODE_ENV === 'development'
+  );
   console.log(posts.map((post) => post.id));
   return posts.map((post) => ({
     params: { id: post.id },

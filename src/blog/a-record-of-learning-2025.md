@@ -3,7 +3,7 @@ title: A record of learning (2025)
 description: My record of talks, posts, and articles worth engagement
 tags: [engineering, education]
 publishedDate: 2025-02-15
-updatedDate: 2025-03-07
+updatedDate: 2025-03-11
 isDraft: false
 ---
 
@@ -25,22 +25,48 @@ It shifts the focus to value deep knowledge of one's chosen tools and puts a hig
 
 - [Questions for a new technology](https://kellanem.com/notes/new-tech) (Kellan Elliott-McCrea)
 - [Introducing the React Profiler](https://legacy.reactjs.org/blog/2018/09/10/introducing-the-react-profiler.html#browsing-commits) (Brian Vaughn)
+
 > yes, it's from 2018, but it's a nice dive into the render and commit phases of React
+
+- [Supercharging Discord Mobile: Our Journey to a Faster App](https://discord.com/blog/supercharging-discord-mobile-our-journey-to-a-faster-app) (Ruby Feinstein)
+- [Staff archetypes](https://staffeng.com/guides/staff-archetypes/)
+- [High Ownership, High Urgency](https://blog.danielna.com/high-ownership-high-urgency/) (Daniel Na)
+- [Your team needs juniors](https://softwaredoug.com/blog/2024/09/07/your-team-needs-juniors) (Doug Turnbull)
+
+> Learning requires the ability to fail publicly.
+While this may be "okay" in groups of only senior+ employees, it becomes *much* more acceptable and common when instruction is a core part of the job.
+"Juniors force-multiply seniors, not by writing code, but just by forcing seniors to teach and rethink their knowledge."
+
+- [On good software engineers](https://candost.blog/on-good-software-engineers/) (Candost Dagdeviren)
+- [Lessons learned in 35 years of making software](https://dev.jimgrey.net/2024/07/03/lessons-learned-in-35-years-of-making-software/) (Jim Grey)
 
 ### Figma Engineering
 
 - [Desperately seeking squircles](https://www.figma.com/blog/desperately-seeking-squircles/) (Daniel Furse)
 
-> Related prior/contemporaneous detail on the design and pursuit of the squircle are found in the following: 
+> Related prior/contemporaneous detail on the design and pursuit of the squircle are found in the following:
 [iOS 7 Icon Squircle](https://www.cocoanetics.com/2013/06/ios-7-icon-squircle/) and
 [Unleashing Genetic Algorithms on the iOS 7 Icon](https://blog.mikeswanson.com/unleashing-genetic-algorithms-on-the-ios-7-icon/) (Mike Swanson)
 
 - [Under the hood of Figma’s infrastructure: Here’s what goes into powering a web-based design tool](https://www.figma.com/blog/under-the-hood-of-figmas-infrastructure/) (Samir Goel)
 - [How Figma's multiplayer technology works](https://www.figma.com/blog/how-figmas-multiplayer-technology-works/) (Evan Wallace)
+- [Just our type: The story of creating Figma Sans](https://www.figma.com/blog/the-story-of-creating-figma-sans/) (Jenny Xie)
+- [Why everyone can (and should) be a great storyteller](https://www.figma.com/blog/why-everyone-can-and-should-be-a-great-storyteller/) (Carly Ayres)
+
+> This one reminded me of Eva Parish's [What I think about when I edit](https://evaparish.com/blog/how-i-edit).
+
+- [Crafting the visual identity for Config 2024](https://www.figma.com/blog/config-2024-branding/) (Jessica Svendsen & Chad Colby)
 
 ### The difficulty of measuring productivity
 
 - [The worst programmer I know](https://dannorth.net/the-worst-programmer/) (Dan North)
+- [Generative organizational culture](https://dora.dev/capabilities/generative-organizational-culture/) (DORA)
+
+> A generative culture is an "organizational culture that is high-trust and emphasizes information flow is predictive of software delivery performance and organizational performance in technology."
+The six key aspects of such a culture are:
+high cooperation, trained messengers, shared risks, encouraged cross-functionality (bridging), allowing failure to invite inquiry, and experimentation with the novel.
+
+- [Measuring developer productivity with the DX Core 4](https://getdx.com/report/dx-core-4/) (Abi Noda)
 
 ### Against web bloat
 
@@ -72,6 +98,17 @@ that provides a set of pseudo-axioms describing the forces affecting software sy
 
 > How to build a learning culture in an engineering org.
 Somehow, 15 minutes is enough to provide a full framework for the cycle of fostering resilience, growth, and collective education among engineers.
+
+- [Top 5 techniques for building the worst microservice system ever](https://www.youtube.com/watch?v=88_LUw1Wwe4&t=2147s) (William Brander)
+
+> Doing something that looks like the inverse may be good, but nothing is guaranteed.
+Microservices are another design pattern for systems,
+and the collective sentiment that they operate as some golden panacea is likely overblown in many instances.
+I still, generally, believe in smaller services, but the added network overhead has to be justified by traffic data and good architecture.
+This lead me to [Assault by GC](https://blog.marcgravell.com/2011/10/assault-by-gc.html) from Marc Gravell,
+which talks about an approach to circumvent GC issues StackExchange was having that caused outages.
+
+- [Marc Andreessen on Building Netscape & the Birth of the Browser](https://the-ben-marc-show.simplecast.com/episodes/marc-andreessen-building-netscape-the-birth-of-the-browser-y_u75PCG) (Marc Andreessen & Ben Horowitz)
 
 ## Tools
 

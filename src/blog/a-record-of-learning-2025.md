@@ -109,6 +109,31 @@ This lead me to [Assault by GC](https://blog.marcgravell.com/2011/10/assault-by-
 which talks about an approach to circumvent GC issues StackExchange was having that caused outages.
 
 - [Marc Andreessen on Building Netscape & the Birth of the Browser](https://the-ben-marc-show.simplecast.com/episodes/marc-andreessen-building-netscape-the-birth-of-the-browser-y_u75PCG) (Marc Andreessen & Ben Horowitz)
+- [A 10x faster Typescript](https://www.youtube.com/watch?v=pNlq-EVld70) (Anders Hejlsberg)
+
+> The TypeScript team is migrating the TS compiler to GoLang (in 7.0).
+A Senior Staff engineer once told me that any migration/port of a mature project must carry a *minimum* of a 10x improvement in performance, reliability, or maintainability (with no degradation in other categories).
+At the time, this seemed steep, but having seen more examples of modernization projects and the long tail to completion,
+the ROI for any given project needs to respect both the maturity of the system and the effort related to replacement.
+Seeing this happen with the TypeScript compiler is exciting,
+since the change feels like a recognition that TypeScript is really not the best choice for writing a compiler.
+Tools that allow you to build things often like to dogfood their own tool.
+"TypeScript is written in TypeScript" is great marketing material,
+but that style of conceit requires the functionality of the product to keep up with internal complexities and consumer expectations.
+If you find yourself needing a shoehorn and rib retractor to use your own tool internally,
+it may be time to invest heavily in dogfooding with modernization work,
+or just accept that you've grown out of the use case for your product.
+It's nice to see that the TypeScript team has selected the former.
+
+- [Papers I have loved](https://www.youtube.com/watch?v=SDS5gLSiLg0) (Casey Muratori)
+
+> This is the type of engineering work that initially made me interested in software engineering,
+though primarily in the abstract, since I never made games in my early projects.
+This talk goes over three (ish) papers that step towards an elegant solution for determining whether or not two complex objects (made of a composite of convex shapes) are intersecting (with an efficient algorithm).
+Along the way, it talks about how metaballs are defined mathematically,
+discusses approaches to vector interpolation,
+and even touches on voroni diagrams.
+Good stuff; rather math-heavy.
 
 ## Tools
 
@@ -122,3 +147,7 @@ No promise that I've gone and used these, but I've certainly read about them and
 - [PlayDate SDK](https://play.date/dev/) - game engine for a small console
 - [Clay](https://github.com/nicbarker/clay/blob/main/README.md) - highly performant flexbox-model layout lib for arbitrary rendering libraries.
 More info in the [introduction video](https://www.youtube.com/watch?v=DYWTw19_8r40)
+
+> This uses an "immediate mode" (all renders are "pure" and updates wholly replace items) interface for GUI spec rather than "retain mode" (CSS is in this category, as existing elements can be modified).
+"Immediate mode" libs can reduce the amount of state stored across the application and minimize the amount of recalculation handled outside of their purview.
+There's a [video from Casey Muratori](https://www.youtube.com/watch?v=Z1qyvQsjK5Y) ([blog](https://caseymuratori.com/blog_0001)) (game developer of Molly Rocket, Inc. at the time) from 2005 that explains the difference well.

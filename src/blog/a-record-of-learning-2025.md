@@ -39,6 +39,19 @@ While this may be "okay" in groups of only senior+ employees, it becomes *much* 
 
 - [On good software engineers](https://candost.blog/on-good-software-engineers/) (Candost Dagdeviren)
 - [Lessons learned in 35 years of making software](https://dev.jimgrey.net/2024/07/03/lessons-learned-in-35-years-of-making-software/) (Jim Grey)
+- [Bazel is incompatible with Javascript](https://pow.rs/blog/bazel-is-incompatible-with-javascript/) (Drew Powers)
+
+> It's nice to see my general impressions of Bazel (and Nx) reflected elsewhere (and with more backing experience).
+My time at Grammarly showed me how Nx punishes you for not blindly adopting their entire philosophy on package development,
+which feels largely based in layers obfuscation,
+and how Bazel as a part of the JS/TS toolchain was massively cumbersome and unintuitive from Node experience POV.
+
+- [Design Tokens W3C Community Group](https://www.w3.org/community/design-tokens/)
+- [The Great Divide](https://css-tricks.com/the-great-divide/) (Chris Coyier)
+- [The illustrated guide to a Ph.D.](https://matt.might.net/articles/phd-school-in-pictures/) (Matt Might)
+- [How I interview](https://rkoutnik.com/articles/How-I-Interview.html) (Randall Koutnik)
+
+> Turns out at least someone in the industry has known that LeetCode is bad signal for a decade.
 
 ### Figma Engineering
 
@@ -56,6 +69,9 @@ While this may be "okay" in groups of only senior+ employees, it becomes *much* 
 > This one reminded me of Eva Parish's [What I think about when I edit](https://evaparish.com/blog/how-i-edit).
 
 - [Crafting the visual identity for Config 2024](https://www.figma.com/blog/config-2024-branding/) (Jessica Svendsen & Chad Colby)
+- [GraphQL, meet LiveGraph: a real-time data system at scale](https://www.figma.com/blog/livegraph-real-time-data-fetching-at-figma/) (Rudi Chen & Slava Kim)
+- [Keeping it 100(x) with real-time data at scale](https://www.figma.com/blog/livegraph-real-time-data-at-scale/) (Arushi Bandi)
+- [LiveGraph - Scaling Real-Time Data Access](https://www.youtube.com/watch?v=bnvF-IsQaUE) (Braden Walker)
 
 ### The difficulty of measuring productivity
 
@@ -67,6 +83,12 @@ The six key aspects of such a culture are:
 high cooperation, trained messengers, shared risks, encouraged cross-functionality (bridging), allowing failure to invite inquiry, and experimentation with the novel.
 
 - [Measuring developer productivity with the DX Core 4](https://getdx.com/report/dx-core-4/) (Abi Noda)
+
+> The "Core 4" introduces a frame on four pillars (speed, effectiveness, quality, and impact) for engineering org productivity.
+They take care to emphasize the known negative impact of using developer output metrics at an individual level and gamification of any productivity measurement through incentives.
+The "paper" itself (can five pages count?) is a brief pitch of this new framework.
+We used GetDX for a bit at Grammarly (perhaps Squarespace too, though I'm less certain).
+As a reporting system and interviewing platform, it seemed functional.
 
 ### Against web bloat
 
@@ -135,7 +157,17 @@ discusses approaches to vector interpolation,
 and even touches on voroni diagrams.
 Good stuff; rather math-heavy.
 
-## Tools
+- [For-Profit (Creative) Software](https://www.youtube.com/watch?v=I4mdMMu-3fc) (EndVertex)
+
+> Most creative software, especially the good iterations, tend to start from a place of passion.
+As tools become companies and profit becomes more important,
+the good intentions are (usually) tainted by the need to make shareholders happy rather than users.
+This leads to price hikes and increasingly antagonistic fee structures that are made to appear cheaper but are not.
+I don't know how to solve this, and EndVertex doesn't necessarily either.
+This video does, however, catalog the history of this in the context of 3D animation software
+and provides some thoughts on what could address the most major concerns (maybe).
+
+## Tools / Info
 
 No promise that I've gone and used these, but I've certainly read about them and find them compelling enough to list.
 
@@ -151,3 +183,5 @@ More info in the [introduction video](https://www.youtube.com/watch?v=DYWTw19_8r
 > This uses an "immediate mode" (all renders are "pure" and updates wholly replace items) interface for GUI spec rather than "retain mode" (CSS is in this category, as existing elements can be modified).
 "Immediate mode" libs can reduce the amount of state stored across the application and minimize the amount of recalculation handled outside of their purview.
 There's a [video from Casey Muratori](https://www.youtube.com/watch?v=Z1qyvQsjK5Y) ([blog](https://caseymuratori.com/blog_0001)) (game developer of Molly Rocket, Inc. at the time) from 2005 that explains the difference well.
+
+- [curated list of personal sites](https://personalsit.es)

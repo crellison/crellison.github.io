@@ -1,6 +1,6 @@
 ---
-title: Building simple static sites
-description: A guide to building simple static sites using HTML and CSS
+title: Primer on building simple static sites
+description: Some initial guidance on writing simple static sites using HTML and CSS
 tags: [engineering, education]
 publishedDate: 2025-03-01
 updatedDate: 2025-03-01

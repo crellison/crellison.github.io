@@ -3,7 +3,7 @@ title: A record of learning (2025)
 description: My record of talks, posts, and articles worth engagement
 tags: [engineering, education]
 publishedDate: 2025-02-15
-updatedDate: 2025-03-11
+updatedDate: 2025-04-27
 isDraft: false
 ---
 
@@ -14,6 +14,8 @@ Generally, I tend to gravitate towards web performance, software design, geometr
 I'm currently interested in the local-first movement in app/web development and am experimenting with a small homelab setup.
 
 ## Reads
+
+### General/Uncategorized
 
 - [Good Code is a love letter to the next developer who will maintain it](https://addyosmani.com/blog/good-code/) (Addy Osmani)
 - [CSS Guidelines](https://cssguidelin.es) (Harry Roberts)
@@ -37,8 +39,6 @@ It shifts the focus to value deep knowledge of one's chosen tools and puts a hig
 While this may be "okay" in groups of only senior+ employees, it becomes *much* more acceptable and common when instruction is a core part of the job.
 "Juniors force-multiply seniors, not by writing code, but just by forcing seniors to teach and rethink their knowledge."
 
-- [On good software engineers](https://candost.blog/on-good-software-engineers/) (Candost Dagdeviren)
-- [Lessons learned in 35 years of making software](https://dev.jimgrey.net/2024/07/03/lessons-learned-in-35-years-of-making-software/) (Jim Grey)
 - [Bazel is incompatible with Javascript](https://pow.rs/blog/bazel-is-incompatible-with-javascript/) (Drew Powers)
 
 > It's nice to see my general impressions of Bazel (and Nx) reflected elsewhere (and with more backing experience).
@@ -49,9 +49,43 @@ and how Bazel as a part of the JS/TS toolchain was massively cumbersome and unin
 - [Design Tokens W3C Community Group](https://www.w3.org/community/design-tokens/)
 - [The Great Divide](https://css-tricks.com/the-great-divide/) (Chris Coyier)
 - [The illustrated guide to a Ph.D.](https://matt.might.net/articles/phd-school-in-pictures/) (Matt Might)
-- [How I interview](https://rkoutnik.com/articles/How-I-Interview.html) (Randall Koutnik)
+- [The art of designing with heart](https://jonas.do/writing/2016-08-29-the-art-of-designing-with-heart/) (Jonas Downey)
+- [An undeniably solid 404 page](https://jonas.do/ope) (Jonas Downey)
+- [The Great(er) Divide in front-end](https://pow.rs/blog/3-pillars-of-front-end-knowledge/) (Drew Powers)
+- [OpenAI's Studio Ghibli meme factory is an insult to art itself](https://www.bloodinthemachine.com/p/openais-studio-ghibli-meme-factory) (Brian Merchant)
+
+### Career reflections
+
+- [Lessons learned in 35 years of making software](https://dev.jimgrey.net/2024/07/03/lessons-learned-in-35-years-of-making-software/) (Jim Grey)
+- [10 Tips for Ramping Up as a Senior Engineer](https://jdx.dev/posts/2020-09-16-10-tips-ramping-up-as-a-senior-engineer/) (Jeff Dickey)
+- [HOWTO: Get tenure](https://matt.might.net/articles/tenure/) (Matt Might)
+- [12 resolutions for grad students](https://matt.might.net/articles/grad-student-resolutions/) (Matt Might)
+- [Rethinking the Developer Career Path](https://www.youtube.com/watch?v=yIPbE7BssOs) (Randall Koutnik)
+
+> This proposes from abstract terms of seniority to phases of the Implementer, the Solver, and the Finder.
+I've internally mapped the traditional title levels to a similar gradation
+(junior as task do-er, mid-level as task author and project do-er,
+senior as project author and team direction do-er,
+staff as team direction author and org direction do-er).
+The simplicity of implementer, solver, and finder is more pleasant though and does not lean on assumptions of team/org structure.
+
+### Interviewing and talent
+
+- [How I Interview](https://rkoutnik.com/articles/How-I-Interview.html) (Randall Koutnik)
 
 > Turns out at least someone in the industry has known that LeetCode is bad signal for a decade.
+
+- [Valley Talent](https://rkoutnik.com/articles/Valley-Talent.html) (Randall Koutnik)
+
+### A11y and interfaces
+
+- [3 Layers of UI Interaction](https://pow.rs/blog/3-layers-of-ui-interaction/) (Drew Powers)
+- [The polish paradox](https://matthewstrom.com/writing/the-polish-paradox/) (Matthew Ström)
+- [Accessible color systems](https://stripe.com/blog/accessible-color-systems) (Daryl Koopersmith and Wilson Miner)
+- [How to create high-performance CSS animations](https://web.dev/articles/animations-guide) (Kayce Basques and Rachel Andrew)
+- [](https://observablehq.com/@sebastien/srgb-rgb-gamma) (Sébastien Pierre)
+
+> I'd be interested to look at these gradient transforms in the oklch space.
 
 ### Figma Engineering
 
@@ -72,6 +106,20 @@ and how Bazel as a part of the JS/TS toolchain was massively cumbersome and unin
 - [GraphQL, meet LiveGraph: a real-time data system at scale](https://www.figma.com/blog/livegraph-real-time-data-fetching-at-figma/) (Rudi Chen & Slava Kim)
 - [Keeping it 100(x) with real-time data at scale](https://www.figma.com/blog/livegraph-real-time-data-at-scale/) (Arushi Bandi)
 - [LiveGraph - Scaling Real-Time Data Access](https://www.youtube.com/watch?v=bnvF-IsQaUE) (Braden Walker)
+- [Building a professional design tool on the web](https://madebyevan.com/figma/building-a-professional-design-tool-on-the-web/) (Evan Wallace)
+- [Figma, faster](https://www.figma.com/blog/figma-faster/) (Jamie Wong)
+- [Building Figma Slides](https://newsletter.pragmaticengineer.com/p/building-figma-slides-with-noah-finer) (Noah Finer and Jonathan Kaufman)
+- [What working at Figma taught me about customer obsession](https://www.lennysnewsletter.com/p/what-working-at-figma-taught-me-about) (Sho Kuwamoto)
+- [Version control: How a UX writer weighs one word against another](https://www.figma.com/blog/version-control-how-a-ux-writer-weighs-one-word-against-another/) (Henry Freedland)
+- [How Figma’s databases team lived to tell the scale](https://www.figma.com/blog/how-figmas-databases-team-lived-to-tell-the-scale/) (Sammy Steele)
+
+### WASM & WebGPU/WebGL
+
+A few dives into high-framerate graphics in the browser by leveraging closer connections to the GPU and WASM.
+
+- [Lessons learned from my first dive into WebAssembly](https://nullprogram.com/blog/2025/04/04/) (Chris Wellons)
+- [Voronoi Diagrams on the GPU](https://www.rykap.com/graphics/skew/2016/02/25/voronoi-diagrams/) (Ryan Kaplan)
+- [Ray Marching Soft Shadows in 2D](https://www.rykap.com/2020/09/23/distance-fields/) (Ryan Kaplan)
 
 ### The difficulty of measuring productivity
 
@@ -90,6 +138,8 @@ The "paper" itself (can five pages count?) is a brief pitch of this new framewor
 We used GetDX for a bit at Grammarly (perhaps Squarespace too, though I'm less certain).
 As a reporting system and interviewing platform, it seemed functional.
 
+- [On good software engineers](https://candost.blog/on-good-software-engineers/) (Candost Dagdeviren)
+
 ### Against web bloat
 
 - [Run less software](https://www.intercom.com/blog/run-less-software/) (Rich Archbold)
@@ -106,6 +156,7 @@ Stripping functionality out of the version of jQuery used was another good move 
 
 - [I don't have time to learn React](https://www.keithcirkel.co.uk/i-dont-have-time-to-learn-react/) (Keith Cirkel)
 - [The frontend treadmill](https://polotek.net/posts/the-frontend-treadmill/) (Marco Rogers)
+- [The Cost of Javscript Frameworks](https://timkadlec.com/remembers/2020-04-21-the-cost-of-javascript-frameworks/) (Tim Kadlec)
 
 ## Talks and Docs
 
@@ -185,3 +236,13 @@ More info in the [introduction video](https://www.youtube.com/watch?v=DYWTw19_8r
 There's a [video from Casey Muratori](https://www.youtube.com/watch?v=Z1qyvQsjK5Y) ([blog](https://caseymuratori.com/blog_0001)) (game developer of Molly Rocket, Inc. at the time) from 2005 that explains the difference well.
 
 - [curated list of personal sites](https://personalsit.es)
+- [Algos](https://madebyevan.com/algos/) (Evan Wallace)
+- [Emscripten](https://emscripten.org/) C++ to JavaScript/WASM
+- [iA Writer](https://ia.net/) 
+- [Hono](https://hono.dev/) New, faster platform-agnositc JS web framework
+- [Web-centric Computing](https://web.cs.dal.ca/~jamie/CS3172/Course/assig/zeller.html)
+
+> Anything to do with dates is very risky to implement on your own given all the fuckery going on with timezones and calendars, but these are fun.
+
+- [Easing function curves](https://easings.net)
+- [Accessibility developer guide](https://www.accessibility-developer-guide.com)

@@ -3,7 +3,7 @@ title: A record of learning (2025)
 description: My record of talks, posts, and articles worth engagement
 tags: [engineering, education]
 publishedDate: 2025-02-15
-updatedDate: 2025-04-27
+updatedDate: 2025-05-21
 isDraft: false
 ---
 
@@ -18,7 +18,6 @@ I'm currently interested in the local-first movement in app/web development and 
 ### General/Uncategorized
 
 - [Good Code is a love letter to the next developer who will maintain it](https://addyosmani.com/blog/good-code/) (Addy Osmani)
-- [CSS Guidelines](https://cssguidelin.es) (Harry Roberts)
 - [Against innovation tokens](https://blog.glyph.im/2024/07/against-innovation-tokens.html) (Glyph)
 
 > Questions the old idea of spending "innovation tokens" and reaping complexity.
@@ -30,15 +29,7 @@ It shifts the focus to value deep knowledge of one's chosen tools and puts a hig
 
 > yes, it's from 2018, but it's a nice dive into the render and commit phases of React
 
-- [Supercharging Discord Mobile: Our Journey to a Faster App](https://discord.com/blog/supercharging-discord-mobile-our-journey-to-a-faster-app) (Ruby Feinstein)
-- [Staff archetypes](https://staffeng.com/guides/staff-archetypes/)
 - [High Ownership, High Urgency](https://blog.danielna.com/high-ownership-high-urgency/) (Daniel Na)
-- [Your team needs juniors](https://softwaredoug.com/blog/2024/09/07/your-team-needs-juniors) (Doug Turnbull)
-
-> Learning requires the ability to fail publicly.
-While this may be "okay" in groups of only senior+ employees, it becomes *much* more acceptable and common when instruction is a core part of the job.
-"Juniors force-multiply seniors, not by writing code, but just by forcing seniors to teach and rethink their knowledge."
-
 - [Bazel is incompatible with Javascript](https://pow.rs/blog/bazel-is-incompatible-with-javascript/) (Drew Powers)
 
 > It's nice to see my general impressions of Bazel (and Nx) reflected elsewhere (and with more backing experience).
@@ -46,13 +37,17 @@ My time at Grammarly showed me how Nx punishes you for not blindly adopting thei
 which feels largely based in layers obfuscation,
 and how Bazel as a part of the JS/TS toolchain was massively cumbersome and unintuitive from Node experience POV.
 
-- [Design Tokens W3C Community Group](https://www.w3.org/community/design-tokens/)
 - [The Great Divide](https://css-tricks.com/the-great-divide/) (Chris Coyier)
 - [The illustrated guide to a Ph.D.](https://matt.might.net/articles/phd-school-in-pictures/) (Matt Might)
 - [The art of designing with heart](https://jonas.do/writing/2016-08-29-the-art-of-designing-with-heart/) (Jonas Downey)
-- [An undeniably solid 404 page](https://jonas.do/ope) (Jonas Downey)
 - [The Great(er) Divide in front-end](https://pow.rs/blog/3-pillars-of-front-end-knowledge/) (Drew Powers)
+- [Advanced React in the Wild](https://largeapps.dev/case-studies/advanced/) (Addy Osmani and Hassan Djirdeh)
+- [DynamoDB’s Best Feature: Predictability](https://brooker.co.za/blog/2022/01/19/predictability.html) (Marc Brooker)
+
+### The place of AI
+
 - [OpenAI's Studio Ghibli meme factory is an insult to art itself](https://www.bloodinthemachine.com/p/openais-studio-ghibli-meme-factory) (Brian Merchant)
+- [AI Horseless Carriages](https://koomen.dev/essays/horseless-carriages/?ck_subscriber_id=2354594420) (Pete Koomen)
 
 ### Career reflections
 
@@ -69,6 +64,8 @@ senior as project author and team direction do-er,
 staff as team direction author and org direction do-er).
 The simplicity of implementer, solver, and finder is more pleasant though and does not lean on assumptions of team/org structure.
 
+- [Staff archetypes](https://staffeng.com/guides/staff-archetypes/)
+
 ### Interviewing and talent
 
 - [How I Interview](https://rkoutnik.com/articles/How-I-Interview.html) (Randall Koutnik)
@@ -76,18 +73,43 @@ The simplicity of implementer, solver, and finder is more pleasant though and do
 > Turns out at least someone in the industry has known that LeetCode is bad signal for a decade.
 
 - [Valley Talent](https://rkoutnik.com/articles/Valley-Talent.html) (Randall Koutnik)
+- [Your team needs juniors](https://softwaredoug.com/blog/2024/09/07/your-team-needs-juniors) (Doug Turnbull)
 
-### A11y and interfaces
+> Learning requires the ability to fail publicly.
+While this may be "okay" in groups of only senior+ employees, it becomes *much* more acceptable and common when instruction is a core part of the job.
+"Juniors force-multiply seniors, not by writing code, but just by forcing seniors to teach and rethink their knowledge."
+
+### A11y and visual design
 
 - [3 Layers of UI Interaction](https://pow.rs/blog/3-layers-of-ui-interaction/) (Drew Powers)
 - [The polish paradox](https://matthewstrom.com/writing/the-polish-paradox/) (Matthew Ström)
 - [Accessible color systems](https://stripe.com/blog/accessible-color-systems) (Daryl Koopersmith and Wilson Miner)
 - [How to create high-performance CSS animations](https://web.dev/articles/animations-guide) (Kayce Basques and Rachel Andrew)
-- [](https://observablehq.com/@sebastien/srgb-rgb-gamma) (Sébastien Pierre)
+- [Perceptual color space vs the tools we have](https://observablehq.com/@sebastien/srgb-rgb-gamma) (Sébastien Pierre)
 
 > I'd be interested to look at these gradient transforms in the oklch space.
 
-### Figma Engineering
+- [Design Tokens W3C Community Group](https://www.w3.org/community/design-tokens/)
+- [CSS Guidelines](https://cssguidelin.es) (Harry Roberts)
+- [How to generate color palettes for design systems](https://matthewstrom.com/writing/generating-color-palettes/) (Matthew Strom)
+
+> The follow on to modern techniques Stripe is using to generate color systems.
+Heavy on the math, which we like.
+
+### Companies scale their systems
+
+- [Supercharging Discord Mobile: Our Journey to a Faster App](https://discord.com/blog/supercharging-discord-mobile-our-journey-to-a-faster-app) (Ruby Feinstein)
+- [Removing jQuery from Github Frontend](https://github.blog/engineering/engineering-principles/removing-jquery-from-github-frontend/) (Github Engineering)
+
+> The subsection on incremental decoupling here provides a framework for facilitating painful migrations.
+Using jQuery is easy, so preventing new uses of it in a draconian way would lead to inevitable animus.
+Setting up linting on new code and a PR bot to pull in the migration orchestration team on relevant PRs allows for the easy suggestion of alternatives.
+Stripping functionality out of the version of jQuery used was another good move to prevent regressions.
+
+- [Future-proofing our metadata stack with Panda, a scalable key-value store](https://dropbox.tech/infrastructure/panda-metadata-stack-petabyte-scale-transactional-key-value-store) (Preslav Le, Tanay Lathia, and Mehant Baid)
+
+
+### Figma engineering
 
 - [Desperately seeking squircles](https://www.figma.com/blog/desperately-seeking-squircles/) (Daniel Furse)
 
@@ -147,16 +169,11 @@ As a reporting system and interviewing platform, it seemed functional.
 - [Performance inequality gaps](https://infrequently.org/series/performance-inequality/) (Alex Russell)
 - [Platform strategy and its discontents](https://infrequently.org/2024/10/platforms-are-competitions/) (Alex Russell)
 - [Building a robust frontend with progressive enhancement](https://www.gov.uk/service-manual/technology/using-progressive-enhancement)
-- [Removing jQuery from Github Frontend](https://github.blog/engineering/engineering-principles/removing-jquery-from-github-frontend/) (Github Engineering)
-
-> The subsection on incremental decoupling here provides a framework for facilitating painful migrations.
-Using jQuery is easy, so preventing new uses of it in a draconian way would lead to inevitable animus.
-Setting up linting on new code and a PR bot to pull in the migration orchestration team on relevant PRs allows for the easy suggestion of alternatives.
-Stripping functionality out of the version of jQuery used was another good move to prevent regressions.
-
 - [I don't have time to learn React](https://www.keithcirkel.co.uk/i-dont-have-time-to-learn-react/) (Keith Cirkel)
 - [The frontend treadmill](https://polotek.net/posts/the-frontend-treadmill/) (Marco Rogers)
 - [The Cost of Javscript Frameworks](https://timkadlec.com/remembers/2020-04-21-the-cost-of-javascript-frameworks/) (Tim Kadlec)
+- [Second-guessing the modern web](https://macwright.com/2020/05/10/spa-fatigue.html) (Tom MacWright)
+- [In defense of the modern web](https://dev.to/richharris/in-defense-of-the-modern-web-2nia) (Rich Harris)
 
 ## Talks and Docs
 
@@ -218,7 +235,7 @@ I don't know how to solve this, and EndVertex doesn't necessarily either.
 This video does, however, catalog the history of this in the context of 3D animation software
 and provides some thoughts on what could address the most major concerns (maybe).
 
-## Tools / Info
+## Tools / Info / Examples
 
 No promise that I've gone and used these, but I've certainly read about them and find them compelling enough to list.
 
@@ -246,3 +263,10 @@ There's a [video from Casey Muratori](https://www.youtube.com/watch?v=Z1qyvQsjK5
 
 - [Easing function curves](https://easings.net)
 - [Accessibility developer guide](https://www.accessibility-developer-guide.com)
+- [Redwood SDK](https://docs.rwsdk.com) React framework for Cloudflare workers
+- [tsdown](https://tsdown.dev/guide/) build TS/JS code with rolldown (similar to tsup with esbuild)
+- [An undeniably solid 404 page](https://jonas.do/ope) (Jonas Downey)
+- [Feedbin](https://feedbin.com/) RSS Reader
+- [Overture](https://github.com/fastmail/overture) the framework of Fastmail (also [Squire](https://github.com/fastmail/Squire) for text editing)
+- [Github web components](https://github.com/github/github-elements)
+- [Dataloader](https://github.com/graphql/dataloader) for batching graphQL requests to avoid N+1 query issues ([Ruby port](https://github.com/Shopify/graphql-batch))

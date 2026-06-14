@@ -4,7 +4,7 @@ description: Some initial guidance on writing simple static sites using HTML and
 tags: [engineering, education]
 publishedDate: 2025-03-01
 updatedDate: 2025-03-01
-isDraft: false
+isDraft: true
 ---
 
 > This is a work in progress.

@@ -30,7 +30,7 @@ a {
 }
 
 .info {
-  padding: 10% 5%;
+  padding: 10% 5% 0% 5%;
   color: var(--light)
 }
 
@@ -46,9 +46,8 @@ a {
 
 .footer {
   font-size: 1vh;
-  padding: 0 5%;
+  padding: 2.5% 5%;
   padding-bottom: 5%;
   color: var(--light);
   width: fit-content;
 }
-
